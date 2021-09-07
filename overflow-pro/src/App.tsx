@@ -1,6 +1,7 @@
 import React from 'react';
-import Overflow from 'rc-overflow';
-import './index.css';
+import Overflow from './components/index';
+import './App.css';
+import { useEffect } from 'react';
 
 interface ItemType {
   value: string | number;
@@ -47,12 +48,11 @@ function renderRest(items: ItemType[]) {
 
 const Demo = () => {
   const [responsive, setResponsive] = React.useState(true);
-  const [data, setData] = React.useState(createData(2000));
+  const [data, setData] = React.useState(createData(200));
 
 
   return (
     <div style={{ padding: 32 }}>
-      <div>rc-overflow</div>
       <button
         type="button"
         onClick={() => {

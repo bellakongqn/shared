@@ -10,4 +10,3 @@ resize-observer -> container width
 数据的长度 总宽度/每个 item 的最小宽度 -> 最小渲染数
 初始未展示
 ready
-flex order
